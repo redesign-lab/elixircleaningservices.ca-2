@@ -11,8 +11,9 @@ Built as a plain static site — **GitHub Pages ready**, no build step, no backe
 - Vanilla JavaScript (mobile nav, FAQ accordion, mailto-composed quote form)
 - Fonts: Oswald (display) + Inter (body)
 - Icons: inline SVG (Lucide-style stroke icons)
+- Header is fixed (top: 0) at all scroll positions; slim topbar persists on desktop. Hero kicker copy uses #6e5620 bronze for WCAG-friendly contrast.
 - Logo: original Elixir Cleaning Services mark recolored to the brand palette (deep evergreen + champagne gold) with background removed — `assets/logo/logo-color.png` (for light surfaces), `logo-light.png` (for dark surfaces), `favicon.png`.
-- Images: AI-generated brand-consistent photography (hero, services, staging) — original site photography could not be downloaded in this environment, so custom photorealistic assets were generated in the brand palette. Photos depicting staff show the Elixir droplet logo on the uniform, per brand guidelines.
+- Images: AI-generated brand-consistent photography (hero, services, staging) — original site photography could not be downloaded in this environment, so custom photorealistic assets were generated in the brand palette. Photos depicting staff were regenerated with the recolored original Elixir wordmark (ivory figure + gold arch) screen-printed on the polos, per brand guidelines.
 
 ## Structure
 

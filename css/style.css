@@ -48,6 +48,7 @@ html, body {
 }
 
 body {
+  padding-top: var(--header-h);
   -webkit-tap-highlight-color: transparent;
   font-family: var(--font-body);
   background: var(--ivory);
@@ -88,6 +89,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ───────────────────────── TOP BAR ───────────────────────── */
 .topbar {
+  margin: 0;
   background: var(--green-950);
   color: #cfe3d5;
   font-size: .78rem;
@@ -124,17 +126,19 @@ img { max-width: 100%; height: auto; display: block; }
 .topbar__contacts a:hover { color: #fff; }
 .topbar__contacts svg { width: 14px; height: 14px; color: var(--gold); }
 
-@media (min-width: 900px) { .topbar { display: block; } }
+@media (min-width: 900px) { .topbar { display: block; } body { padding-top: calc(var(--header-h) + 39px); } html { scroll-padding-top: calc(var(--header-h) + 39px + 14px); } }
 
 /* ───────────────────────── HEADER ───────────────────────── */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 900;
-  background: rgba(250, 247, 239, .92);
+  background: rgba(250, 247, 239, .94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(14, 59, 42, .09);
+  border-bottom: 1px solid rgba(14, 59, 42, .12);
   transition: box-shadow .25s ease;
 }
 .header.is-scrolled { box-shadow: 0 8px 30px rgba(7, 31, 21, .10); }
@@ -318,7 +322,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--gold-soft);
   margin-bottom: 16px;
 }
-.eyebrow--dark { color: var(--gold-dark); }
+.eyebrow--dark { color: #6e5620; }
 .eyebrow__dot {
   width: 26px; height: 2px;
   background: var(--gold);
