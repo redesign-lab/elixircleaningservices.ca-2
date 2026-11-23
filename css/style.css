@@ -150,27 +150,15 @@ img { max-width: 100%; height: auto; display: block; }
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
   flex-shrink: 0;
 }
-.logo__mark { width: 42px; height: 42px; }
-.logo__type { display: flex; flex-direction: column; line-height: 1; }
-.logo__name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.42rem;
-  letter-spacing: .34em;
-  color: var(--green-900);
+.logo__img {
+  height: 62px;
+  width: auto;
+  display: block;
 }
-.logo__sub {
-  font-size: .58rem;
-  letter-spacing: .30em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  font-weight: 600;
-  margin-top: 4px;
-}
+@media (max-width: 480px) { .logo__img { height: 48px; } }
 
 .nav { display: none; align-items: center; gap: 26px; }
 .nav__list {
@@ -1007,8 +995,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 56px 20px 36px;
 }
 .footer__brand p { margin: 16px 0; font-size: .88rem; max-width: 40ch; }
-.logo--light .logo__name { color: var(--ivory); }
-.logo--light .logo__sub { color: var(--gold); }
+.logo--light .logo__img { height: 96px; }
 .footer__insured {
   display: inline-flex;
   align-items: center;

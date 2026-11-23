@@ -11,7 +11,8 @@ Built as a plain static site — **GitHub Pages ready**, no build step, no backe
 - Vanilla JavaScript (mobile nav, FAQ accordion, mailto-composed quote form)
 - Fonts: Oswald (display) + Inter (body)
 - Icons: inline SVG (Lucide-style stroke icons)
-- Images: AI-generated brand-consistent photography (hero, services, staging) — no original client photography could be downloaded in this environment, so custom photorealistic assets were generated in the brand palette (deep evergreen + champagne gold). Photos depicting staff show the Elixir droplet logo on the uniform, per brand guidelines.
+- Logo: original Elixir Cleaning Services mark recolored to the brand palette (deep evergreen + champagne gold) with background removed — `assets/logo/logo-color.png` (for light surfaces), `logo-light.png` (for dark surfaces), `favicon.png`.
+- Images: AI-generated brand-consistent photography (hero, services, staging) — original site photography could not be downloaded in this environment, so custom photorealistic assets were generated in the brand palette. Photos depicting staff show the Elixir droplet logo on the uniform, per brand guidelines.
 
 ## Structure
 
@@ -29,7 +30,7 @@ Built as a plain static site — **GitHub Pages ready**, no build step, no backe
 ## Notes
 
 - The original site (elixircleaningservices.ca) is a WordPress.com site. Its contact details (226-337-1945, elixircleaning519@gmail.com, info@elixircleaningservices.ca, Fergus ON), service list, pricing note (turnovers from $50), testimonial (Nicole, Airbnb Owner) and 24/7/365 availability were carried over verbatim.
-- The original logo file could not be downloaded (network restrictions), so the droplet + sparkle mark and wordmark were recreated as modern inline SVG in the same evergreen/gold spirit — ready to swap with the master logo artwork if supplied.
+- Logo supplied by the client (`image-1.png`) was background-removed via luminance-keyed alpha and recolored: deep evergreen wordmark/figure + champagne gold arch (light surfaces), ivory figure + gold arch (dark surfaces). Original geometry untouched — no redrawing, no font replacement.
 - The quote form intentionally uses `mailto:` composition (static site, no backend) instead of faking a server submission.
 - `<meta name="robots" content="noindex, nofollow">` is set so this demo does not compete with the live site in search results.
 
